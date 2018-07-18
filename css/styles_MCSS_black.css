@@ -37,11 +37,10 @@ nav .lock-logo {
 }
 
 .logo {
-    /*    margin-left: 50px;
-    */
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
     font-size: 1.1em;
+    letter-spacing: 1.1;
     text-transform: uppercase;
     /*    vertical-align: middle;*/
 }
@@ -64,16 +63,19 @@ nav li:last-of-type {
 }
 
 .parallax-container {
-    height: 500px;
+    max-height: 100vh;
 }
 
-.motto-container {
-    margin: 0;
+/*
+.parallax-container img {
+    width: 100vw;
 }
+*/
 
 .motto {
     display: inline-block;
     z-index: 100;
+    margin: 0 0 0 0.75rem;
     padding: 15px;
     line-height: 1.5;
     background: rgba(20, 20, 20, 0.8);
@@ -83,19 +85,27 @@ nav li:last-of-type {
     letter-spacing: 1.1;
 }
 
+.hours {
+    margin-left: 5px;
+    color: #f98b25;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
 .parallax-container svg {
     width: 100px;
     z-index: 100;
 }
 
+/*
 .parallax-container svg path {
-    /*    fill: #ff9800;*/
+        fill: #ff9800;
     fill: #222;
 }
-
+*/
 .cities {
     padding: 8px 12px;
-    margin-top: 0;
+    margin-top: 20px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 6px;
     font-size: 1.3em;
@@ -198,7 +208,8 @@ nav li:last-of-type {
 }
 
 .num {
-    font-size: 1.2em;
+    font-size: 1.6em !important;
+    font-weight: 700;
 }
 
 .contact .fa {
@@ -340,4 +351,23 @@ footer p {
         height: 100px;
         line-height: 100px;
     }
+}
+
+@media only screen and (max-width: 500px) {
+    .call-button-container {
+        text-align: center;
+    } 
+    
+    .motto {
+        margin: 0;
+    }
+    
+    .logo {
+        margin-left: 50px;
+    }
+    
+    .lock-logo-right {
+        display: none;
+    }
+
 }
