@@ -63,7 +63,7 @@ nav li:last-of-type {
 }
 
 .parallax-container {
-    max-height: 100vh;
+    max-height: 100%;
 }
 
 /*
@@ -75,7 +75,7 @@ nav li:last-of-type {
 .motto {
     display: inline-block;
     z-index: 100;
-    margin: 0 0 0 0.75rem;
+    margin: 0 0.75rem 0 0.75rem;
     padding: 15px;
     line-height: 1.5;
     background: rgba(20, 20, 20, 0.8);
@@ -156,13 +156,19 @@ nav li:last-of-type {
 /* PARALLAX 2 */
 
 .police {
-    width: 100%;
-    margin-left: 5%;
+    width: auto;
+    height: 500px;
+    padding-right: 40px;
     font-size: 1.6em;
+    background-color: #ef6c00;
+    background-image: url("/img/keys-orange.jpeg");
+    background-size: cover;
+/*    background-attachment: fixed;*/
 }
 
 .police img {
-    width: 250px;
+    margin-top: 30px;
+    width: 350px;
 }
 
 /* CONTACT */
@@ -181,7 +187,7 @@ nav li:last-of-type {
 */
 
 .contact .container {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding-bottom: 0;
 }
 
@@ -239,6 +245,12 @@ nav li:last-of-type {
     z-index: -1;
 }
 
+.infoWindow {
+    height: 50px;
+    font-size: 1.1em;
+    padding: 5px;
+}
+
 .form-container {
     display: flex;
     flex-direction: row;
@@ -264,7 +276,6 @@ nav li:last-of-type {
 
 .contact form {
     width: 50%;
-    height: 60%;
     background-color: #fff;
     /*
     border: 1px solid #ccc;
@@ -341,6 +352,7 @@ footer p {
     margin: 0;
 }
 
+
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 601px) {
@@ -354,14 +366,11 @@ footer p {
 }
 
 @media only screen and (max-width: 500px) {
-    .call-button-container {
+    .call-btn-container {
+        float: none !important;
         text-align: center;
-    } 
-    
-    .motto {
-        margin: 0;
-    }
-    
+    }    
+        
     .logo {
         margin-left: 50px;
     }
@@ -369,5 +378,33 @@ footer p {
     .lock-logo-right {
         display: none;
     }
+    
+    .police {
+        height: 250px;
+        padding-right: 15px;
+        font-size: 1.4em;
+    }
+    
+    .police img {
+        width: 200px;
+        margin-top: 0;
+    }
+
+    .cities {
+        font-size: 1.1em;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+        .police {
+        height: 550px;
+            background-attachment: fixed;
+    }
+
+    .police img {
+        width: 500px;
+    }
+    
 
 }
