@@ -58,6 +58,23 @@ nav li:last-of-type {
     margin-right: 50px;
 }
 
+.side-nav {
+    font-size: 2em !important;
+}
+
+.side-nav li:hover {
+    background-color: #eee;
+}
+
+.side-nav li:hover > a {
+    color: #ef6c00;
+}
+
+.side-nav li:last-of-type {
+    margin-right: 0;
+}
+
+
 .btn-floating {
     border: 1px solid #fff;
 }
@@ -65,12 +82,6 @@ nav li:last-of-type {
 .parallax-container {
     max-height: 100%;
 }
-
-/*
-.parallax-container img {
-    width: 100vw;
-}
-*/
 
 .motto {
     display: inline-block;
@@ -120,6 +131,12 @@ nav li:last-of-type {
     font-size: 1.4em;
 }
 
+/* OFFER */
+
+.light {
+    margin-bottom: 0;
+}
+
 /* LOCALISATIONS */
 
 .localisations {
@@ -128,6 +145,7 @@ nav li:last-of-type {
 
 .localisations ul {
     width: 100%;
+    margin-bottom: 0;
 }
 
 .localisations a {
@@ -161,21 +179,46 @@ nav li:last-of-type {
 
 /* PARALLAX 2 */
 
-.police {
+/* .police {
     width: auto;
     height: 500px;
-    padding-right: 40px;
+    padding-left: 40px;
     font-size: 1.6em;
     background-color: #ef6c00;
-    background-image: url("/img/keys.jpeg");
+    background-image: url("https://images.pexels.com/photos/721480/pexels-photo-721480.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350");
     background-size: cover;
-/*    background-attachment: fixed;*/
+} */
+.section-police {
+    height: 450px;
+    background-color: #000;
+    position: relative;
 }
 
-.police img {
+.section-police .row .col {
+    padding: 0;
+}
+
+.section-police h5 {
+    padding-top: 25%;
+}
+
+.section-police .lockers {
+    height: 100%;
+    width: auto;
+}
+
+.section-police .logo-police {
+    margin: 30px 0;
+}
+
+/* .police img {
     margin-top: 30px;
     width: 350px;
 }
+
+.police p {
+    text-transform: uppercase;
+} */
 
 /* CONTACT */
 
@@ -191,7 +234,10 @@ nav li:last-of-type {
 }
 
 */
-
+.form-container {
+    background-image: url("https://images.pexels.com/photos/257853/pexels-photo-257853.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+}
 .contact .container {
     margin-bottom: 10px;
     padding-bottom: 0;
@@ -252,6 +298,7 @@ nav li:last-of-type {
 }
 
 .infoWindow {
+    font-family: "Open Sans", sans-serif;
     height: 50px;
     font-size: 1.1em;
     padding: 5px;
@@ -282,12 +329,20 @@ nav li:last-of-type {
 
 .contact form {
     width: 50%;
-    background-color: #fff;
-    /*
+/*    background-color: #fff;*/
+        background: rgba(255, 255, 255, 0.93);
     border: 1px solid #ccc;
-    border-radius: 6px;*/
-    margin: 30px auto 0;
-    padding: 40px 10px 10px;
+    border-radius: 6px;
+    margin: 30px auto 10px;
+    padding-top: 25px !important;
+}
+
+.contact form .row .col {
+    padding: 0 2rem;
+}
+
+.contact form label {
+    padding-left: 1rem;
 }
 
 /*
@@ -301,6 +356,10 @@ nav li:last-of-type {
 
 }
 */
+
+/* .input-field {
+    padding-top: 25px;
+} */
 
 .input-field label {
     color: #000;
@@ -359,6 +418,12 @@ footer p {
 }
 
 
+/* CITY PAGES */
+
+.call-btn {
+    margin-bottom: 2.5rem;
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 601px) {
@@ -371,7 +436,7 @@ footer p {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .call-btn-container {
         float: none !important;
         text-align: center;
@@ -399,6 +464,25 @@ footer p {
     .cities {
         font-size: 1.1em;
     }
+
+    .section-police {
+        height: 600px;
+    }
+
+    .section-police h5 {
+        padding-top: 30px;
+        padding-left: 30px;
+        font-size: 2em;
+    }
+
+    .section-police .logo-police {
+        width: 320px;
+    }
+
+    .section-police .lockers {
+        height: auto;
+    }
+    
 
 }
 

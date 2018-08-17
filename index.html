@@ -6,13 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Anton|Maven+Pro:700|Ubuntu:700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
-
-    <link type="text/css" rel="stylesheet" href="css/styles_MCSS_black.css">
-    <link rel="shortcut icon" type="image/png" href="img/shield-black.png">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/aos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/shield-black.png">
     <script src="https://maps.googleapis.com/maps/api/js"></script>
 
 </head>
@@ -21,21 +19,19 @@
     <!-- NAVIGATION -->
     <nav>
         <div class="nav-wrapper black">
-
             <a href="#" class="brand-logo orange-text valign-wrapper">
                <img id="lock-logo" class="responsive-img hide-on-med-and-down lock-logo" type="image/svg+xml" src="img/shield.png">
                 <span class="logo">włamywacz<span class="logo-web orange-text text-lighten-4">.com.pl</span></span>
             </a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse orange-text text-darken-2"><i class="material-icons orange-text text-lighten-4">menu</i></a>
+            <a href="#" data-target="mobile-menu" class="button-collapse orange-text text-darken-2"><i class="material-icons orange-text text-lighten-4">menu</i></a>
             <img id="lock-logo-right" class="responsive-img hide-on-large-only lock-logo-right" type="image/svg+xml" src="img/shield.png">
-
             <ul class="right hide-on-med-and-down">
                 <li><a href="#oferta" class="white-text darken-1">Oferta</a></li>
                 <li><a href="#obszar" class="white-text darken-1">Obszar działania</a></li>
                 <li><a href="#firma" class="white-text darken-1">O firmie</a></li>
                 <li><a href="#kontakt" class="orwhiteange-text darken-1">Kontakt</a></li>
             </ul>
-            <ul class="side-nav grey lighten-5" id="mobile-demo">
+            <ul class="side-nav grey lighten-5" id="mobile-menu">
                 <li><a href="#oferta">Oferta</a></li>
                 <li><a href="#obszar">Obszar działania</a></li>
                 <li><a href="#firma">O firmie</a></li>
@@ -44,20 +40,31 @@
         </div>
     </nav>
 
+    <!-- <div class="slider">
+            <ul class="slides">
+              <li>
+                  <img src="https://images.pexels.com/photos/1171480/pexels-photo-1171480.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                  <div class="caption left-align">
+                  <h3>Awaryjne otwieranie samochodów i&nbsp;mieszkań <span class="hours">24/7</span></h3>
+                  <h5 class="grey-text text-lighten-2">Rybnik, Żory, Jastrzębie-Zdrój, Wodzisław Śląski, Racibórz, Gliwice, Katowice</h5>
+                </div>
+              </li>
+              <li>
+                  <img src="https://images.pexels.com/photos/965878/pexels-photo-965878.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                  <div class="caption black-text left-align">
+                  <h3>Posiadamy licencję Policji</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+            </ul>
+          </div> -->
     <!--    PARALLAX -->
     <div class="parallax-container valign-wrapper" >
         <div class="parallax grey darken-4">
-<!--             <img src="img/canstockphoto18508592.jpg" alt="keys in the door"> -->
-<!--             <img src="https://as1.ftcdn.net/jpg/00/95/02/46/500_F_95024650_KkaSjqSRITuGFuXgY1w4HOuNWQnF1GxC.jpg" alt="">-->
-<!--<img src="https://as2.ftcdn.net/jpg/00/83/21/31/500_F_83213161_Bb35EYIFKqddN5dtEucWa4qa6VR3vzgw.jpg" alt="">-->
-<!--<img src="https://as1.ftcdn.net/jpg/01/39/21/10/500_F_139211008_wLI4Mo1hNU3ybY99LpFOJYkTQds5nkGZ.jpg" alt="">-->
-<!--             <img src="https://as1.ftcdn.net/jpg/01/03/03/42/500_F_103034202_g07JfgCBA9KQJz1WFYVaOFGrKqb0M50s.jpg" alt="">-->
              <img class="responsive-img" src="https://images.pexels.com/photos/965878/pexels-photo-965878.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
         </div>
-
-
         <div class="container">
-        
+            
 <!--           CONTACT AND SOCIAL MENU BUTTON -->
             <div class="row">
                 <div class="fixed-action-btn click-to-toggle">
@@ -71,8 +78,7 @@
                     </ul>
                 </div>
             </div>
-            
-            
+                 
 <!--            MOTTO -->
             <div class="row ">
                 <div class="row motto-container flow-text">
@@ -113,7 +119,7 @@
     <!--   OFFER -->
     <div class=" container">
         <div class="section">
-            <h4 id="oferta" name="offer" class=" header " data-aos="slide-left" data-aos-duration="700" data-aos-once="true">Oferta</h4>
+            <h4 id="oferta" name="offer" class=" header ">Oferta</h4>
             <div class="row ">
                 <div class="col s12 m4 ">
                     <div class="icon-block" data-aos="slide-up" data-aos-duration="700">
@@ -143,48 +149,46 @@
                         <h5 class="center ">Naprawa i wymiana zamków</h5>
 
                         <p class="light ">Naprawa zamków samochodowych</p>
-                        <p class="light ">Wymiana zamków w drzwiach</p>
+                        <p class="light ">Naprawa i wymiana zamków w drzwiach Gerda, Dierre, drzwiach chińskich</p>
                         <p class="light ">Zmiana kodu nacięcia klucza i&nbsp;zamków (wówczas po kradzieży kluczy nie trzeba wymieniać wszystkich zamków na nowe)</p>
                     </div>
                 </div>
                 
             </div>
 
-            <div class="row ">
-                <div class="col s12 m4 ">
+            <div class="row">
+                <div class="col s12 m4">
                     <div class="icon-block " data-aos="slide-up" data-aos-duration="700">
                         <h2 class="center orange-text text-darken-3 "><i class="fa fa-key activator " aria-hidden="true "></i></h2>
-                        <h5 class="center ">Dorabianie i kodowanie kluczy i pilotów samochodowych</h5>
+                        <h5 class="center ">Dorabianie i kodowanie kluczy</h5>
 
                         <p class="light ">Dorabianie i kodowanie kluczy samochodowych</p>
-                        <p class="light ">Dorabianie kart samochodowych z&nbsp;systemem Hand Free</p>
-                        <p class="light ">Kodowanie immobilizerów i pilotów</p>
-                        <p class="light ">Naprawianie pilotów (przycisków) oraz wymiana obudowy</p>
                         <p class="light ">Dorabianie kluczy do haków i bagażników dachowych (nawet gdy te zostały zgubione)</p>
                         <p class="light ">Dorabianie kluczy do motorów Harley Davidson</p>
                         <p class="light ">Dojazd do klienta i dorabianie oraz kodowanie kluczy na miejscu!</p>
-                        </div>
-                </div>
-
-                <div class="col s12 m4 ">
-                    <div class="icon-block " data-aos="slide-up" data-aos-duration="700">
-                        <h2 class="center orange-text text-darken-3 "><i class="fa fa-battery-half " aria-hidden="true "></i></h2>
-                        <h5 class="center ">Naprawa i regeneracja stacyjek</h5>
-
-                        <p class="light ">Regeneracja stacyjek pod klucz</p>
                     </div>
                 </div>
 
-                <div class="col s12 m4 ">
+                <div class="col s12 m4">
+                    <div class="icon-block " data-aos="slide-up" data-aos-duration="700">
+                        <h2 class="center orange-text text-darken-3 "><i class="fa fa-battery-half " aria-hidden="true "></i></h2>
+                        <h5 class="center ">Regeneracja stacyjek, kodowanie pilotów samochodowych</h5>
+
+                        <p class="light ">Regeneracja stacyjek pod klucz</p>
+                        <p class="light ">Dorabianie kart samochodowych z&nbsp;systemem Hand Free</p>
+                        <p class="light ">Kodowanie immobilizerów </p>
+                        <p class="light ">Dorabianie i kodowanie pilotów</p>
+                        <p class="light ">Naprawianie pilotów (przycisków) oraz wymiana obudowy</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
                     <div class="icon-block " data-aos="slide-up" data-aos-duration="700">
                         <h2 class="center orange-text text-darken-3 "><i class="fa fa-building " aria-hidden="true "></i></h2>
                         <h5 class="center ">Naprawa i serwis drzwi</h5>
                         <p class="light ">Montaż systemu jednego klucza Master Key</p>
-                        <p class="light ">Wymiana i naprawa zamków w drzwiach Gerda (klucz rurkowy, gdy opada klamka, wymiana wkładu cylindrycznego z&nbsp;kompletem kluczy)</p>
-                        <p class="light ">Wymiana wkładki w drzwiach standardowych i&nbsp;antywłamaniowych</p>
-                        <p class="light ">Wymiana wkładki z&nbsp;kompletem kluczy do drzwi Dierre</p>
+                        <p class="light ">Wymiana wkładki w drzwiach standardowych i&nbsp;antywłamaniowych (z kompletem kluczy)</p>
                         <p class="light ">Wymiana i naprawa listw drzwiowych</p>
-                        <p class="light ">Wymiana i naprawa zamków w&nbsp;drzwiach chińskich</p>
                         <p class="light">Wymiana wkładek na wkładki atestowane oraz możliwość zamówienia wkładek z&nbsp;profilem zastrzeżonym klucza</p>
                     </div>
                 </div>
@@ -193,18 +197,29 @@
         </div>
     </div>
     
-    <div class="container police">
-        <div class="section right-align">
-            <p class=" black-text ">Posiadamy licencję Policji</p>
-            <img class="responsive-img" src="img/Polish_police_logo.svg.png " alt="keys">
+    <section class="section-police">
+        <div class="row">
+            <div class="col s12 m5 l7">
+                <img class="responsive-img lockers" src="https://images.pexels.com/photos/721480/pexels-photo-721480.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350" alt="">
+            </div>
+            <div class="col s12 m6 offset-m1 pull-m1 l4 offset-l1 pull-l1 center-align">
+                    <h5 class=" white-text text-darken-3">Posiadamy licencję Policji</h5>
+                    <img class="responsive-img logo-police" src="img/Polish_police_logo.svg.png" alt="Logo policji">
+            </div>
         </div>
-    </div>
+    </section>
+    <!-- <div class="container police">
+        <div class="section left-align">
+            <p class=" white-text text-darken-3">Posiadamy licencję Policji</p>
+            <img class="responsive-img" src="img/Polish_police_logo.svg.png" alt="keys">
+        </div>
+    </div> -->
 
     <!--    LOCALISATIONS -->
 
-    <div class="section black-text localisations valign-wrapper ">
+    <div class="section black-text localisations valign-wrapper">
         <div class="row container ">
-            <h4 id="obszar" class=" header orange-text text-darken-3 " data-aos="slide-left" data-aos-duration="700" data-aos-once="true">Obszar działania</h4>
+            <h4 id="obszar" class=" header orange-text text-darken-3 ">Obszar działania</h4>
             <ul class="flow-text ">
                 <li><a class="black-text " href="rybnik.html ">Rybnik</a></li>
                 <li><a class="black-text " href="zory.html">Żory</a></li>
@@ -221,20 +236,22 @@
 
 
     <!--    ABOUT -->
+<!--
     <div class=" section grey darken-4 white-text ">
         <div class="row container ">
-            <h4 id="firma " class=" header orange-text " data-aos="slide-left" data-aos-duration="700" data-aos-once="true">O firmie</h4>
+            <h4 id="firma " class=" header orange-text ">O firmie</h4>
             <p>Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis mollitia, dignissimos saepe voluptatem, officiis laboriosam reprehenderit aut rem cum. Dignissimos dolorem aspernatur expedita quidem, tenetur, suscipit totam saepe reiciendis unde molestiae atque nobis exercitationem debitis magni quam necessitatibus impedit. Impedit asperiores nisi nemo temporibus, dolor saepe. Possimus cumque laudantium, facilis, officia nesciunt eum veritatis, excepturi architecto sed aliquid recusandae unde quaerat nostrum voluptatibus nobis est itaque! Saepe vitae deserunt veniam assumenda, eum eveniet beatae in quidem fugiat perferendis </p>
         </div>
     </div>
+-->
 
     <!--   CONTACT FORM -->
 
     <div class="contact section form-container ">
         <div class="row container ">
             <!--            <div class="col m10 offset-m1 s12">-->
-            <h4 id="kontakt" class="header" data-aos="slide-left" data-aos-duration="700" data-aos-once="true">Napisz do nas</h4>
+            <h4 id="kontakt" class="white-text">Napisz do nas</h4>
             <div class="row">
                 <form class="col m8 offset-m2 s12">
                     <div class="row">
@@ -261,18 +278,12 @@
             </div>
         </div>
     </div>
-    </div>
-    
-    </div>
-    </div>
 
-        <div id="map" class="map-container">
 <!--
-            <iframe id="map " width="100% " height="100% " frameborder="0 " scrolling="no " marginwidth="0 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.4308532505775!2d18.532745950944772!3d50.09694197932711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47114f2f2b972f39%3A0x5ad74aa8b8be88be!2sW%C5%81AMYWACZ!5e0!3m2!1spl!2spl!4v1523388581510 " style="border:0 ">
-            </iframe>
--->
+        <div id="map" class="map-container">
         </div>
 
+-->
     <!-- CONTACT INFO -->
     <div class="contact section valign-wrapper info-section ">
         <div class="row ">
@@ -296,7 +307,7 @@
     </footer>
 
     <script type="text/javascript " src="https://code.jquery.com/jquery-3.2.1.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js "></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="js/script_materializeCSS.js "></script>
     <script src="js/script.js "></script>
      <script async defer

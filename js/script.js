@@ -3,7 +3,7 @@
 function initMap()   {   
     var position = new google.maps.LatLng(50.096942, 18.53494);
     var markerIcon = 'img/Arrow_7.png';
-    var content = '<div class="infowindow">Dworek 9B,<br> 44-200 Rybnik</div>'
+//    var content = '<div class="infowindow">Dworek 9B,<br> 44-200 Rybnik</div>'
     var styles = [
     {
         "featureType": "all",
@@ -360,12 +360,12 @@ function initMap()   {
 	       }      
     });
     
-    var infowindow = new google.maps.InfoWindow({
-        content: content,
-        maxWidth: 200,
-    });
-    
-    infowindow.open(map, marker);
+//    var infowindow = new google.maps.InfoWindow({
+//        content: content,
+//        maxWidth: 200,
+//    });
+//    
+//    infowindow.open(map, marker);
 }   
 
 
