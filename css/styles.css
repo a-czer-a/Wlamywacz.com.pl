@@ -168,9 +168,11 @@ nav li:last-of-type {
 
 .about {
     padding-top: 0;
+    padding-bottom: 0;
 }
 .about hr {
     margin-bottom: 40px;
+    width: 80%;
 }
 /*
 .localisations img {
