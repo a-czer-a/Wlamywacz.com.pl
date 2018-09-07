@@ -173,6 +173,7 @@ nav li:last-of-type {
 .about {
     padding-top: 10px;
     padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
 .about .row {  
@@ -238,12 +239,11 @@ nav li:last-of-type {
 }
 
 .hand-img img {
-    height: 70%;
+    width: 100%;
 }
 
 .info-section {
     padding-bottom: 0;
-    border-top: 1px solid #ccc;
 }
 
 .form-container {
@@ -260,8 +260,10 @@ nav li:last-of-type {
 }
 
 .contact p {
+    margin: 0;
     font-size: 1.1em;
 }
+
 
 .contact-info {
     font-weight: 500;
@@ -289,6 +291,7 @@ nav li:last-of-type {
 }
 
 .num {
+    padding: 15px 0;
     font-size: 2em !important;
     font-weight: 700;
 }
@@ -480,12 +483,11 @@ footer p {
     }
 
     .section-police {
-        height: 600px;
+        height: auto;
     }
 
     .section-police h5 {
         padding-top: 30px;
-        padding-left: 30px;
         font-size: 2em;
     }
 
