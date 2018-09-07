@@ -3,6 +3,9 @@ body {
     padding: 0;
 }
 
+section {
+    padding-top: 30px;
+}
 nav {
     height: 100px;
     line-height: 100px;
@@ -141,6 +144,7 @@ nav li:last-of-type {
 
 .localisations {
     margin: 0 auto;
+    border-bottom: 1px solid #ccc;
 }
 
 .localisations ul {
@@ -167,12 +171,12 @@ nav li:last-of-type {
 }
 
 .about {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-.about hr {
-    margin-bottom: 40px;
-    width: 80%;
+
+.about .row {  
+    margin-bottom: 0;
 }
 /*
 .localisations img {
@@ -229,19 +233,19 @@ nav li:last-of-type {
 } */
 
 /* CONTACT */
+.contact .row {
+    margin-bottom: 0;
+}
+
+.hand-img img {
+    height: 70%;
+}
 
 .info-section {
+    padding-bottom: 0;
     border-top: 1px solid #ccc;
 }
 
-
-/*
-.contact {
-    margin-bottom: 0 !important;
-    padding: 0 !important;
-}
-
-*/
 .form-container {
     background-image: url("https://images.pexels.com/photos/257853/pexels-photo-257853.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-size: cover;
@@ -259,12 +263,23 @@ nav li:last-of-type {
     font-size: 1.1em;
 }
 
-.contact p:first-child {
-    margin-top: 20px;
-}
-
 .contact-info {
     font-weight: 500;
+}
+
+.contact-info p:first-of-type {
+    margin-top: 0;
+}
+
+.contact-info .fa {
+    padding-top: 10px;
+    font-size: 2.5em;
+    transition: all .2s ease-in-out;
+}
+
+.contact-info .fa:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .company {
@@ -274,17 +289,8 @@ nav li:last-of-type {
 }
 
 .num {
-    font-size: 1.6em !important;
+    font-size: 2em !important;
     font-weight: 700;
-}
-
-.contact .fa {
-    font-size: 2em;
-    color: #1976d2;
-}
-
-.contact .fa-mobile {
-    padding-right: 10px;
 }
 
 /* FORM, MAP AND LABELS */
