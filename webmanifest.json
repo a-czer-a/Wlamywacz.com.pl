@@ -1,0 +1,28 @@
+{
+    "name": "Włamywacz - awaryjne otwieranie samochodów i mieszkań",
+    "short_name": "Włamywacz",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#fff",
+    "description": "Strona Włamywacza",
+    "dir": "ltr",
+    "lang": "pl",
+    "icons": [
+        {
+          "src": "img/logo-small.jpg",
+          "type": "image/jpeg",
+          "size": "100x114"
+        },
+        {
+          "src": "img/logo-medium.jpg",
+          "type": "image/jpeg",
+          "size": "480x545"
+        },
+        {
+          "src": "img/logo-big.jpg",
+          "type": "image/jpeg",
+          "size": "877x965"
+        }
+      ]
+  }
