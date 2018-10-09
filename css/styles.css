@@ -5,6 +5,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     max-width: 1300px;
+    overflow-x: hidden;
 }
 
 header {
@@ -178,6 +179,34 @@ nav li:last-of-type {
     font-size: 1.6em;
 }
 
+/* MOTTO BOX */
+
+.motto-keys {
+    margin: 0 auto;
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+.motto-keys .row {
+    margin: 0 auto;
+}
+
+.motto-keys .col {
+    padding: 0;
+}
+
+.motto-keys img {
+    height: 120px;
+}
+.motto-keys .motto-question {
+    font-weight: bold;
+}
+
+.motto-keys h5:last-of-type {
+    margin-top: 20px;
+    color: #d0262b;
+    line-height: 140%;
+}
+
 /* OFFER */
 
 .offer {
@@ -219,9 +248,19 @@ nav li:last-of-type {
 .localisations li:hover {
     background-color: #f5f5f5;
 }
+.map {
+    width: 100%;
+}
 
+.map img {
+    width: 50%;
+    height: auto;
+}
+
+
+/* O firmie */
 .about {
-    background-color: #f4f4f4;
+    background-color: #f8f8f8;
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #eee;
@@ -230,6 +269,8 @@ nav li:last-of-type {
 .about .row {  
     margin-bottom: 10px;
 }
+
+/* Licencja policji */
 
 .section-police {
     height: 300px;
