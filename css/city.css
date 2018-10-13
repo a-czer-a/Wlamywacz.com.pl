@@ -1,6 +1,7 @@
 body {
     margin: 0 auto;
 }
+
 #city .container,
 .call-btn {
     border-radius: 4px;
@@ -10,6 +11,7 @@ body {
     padding: 0;
     margin-bottom: 30px;
 }
+
 #city {
     min-height: 100vh;
 }
@@ -27,17 +29,9 @@ body {
     height: auto;
 }
 
-
 .container {
     margin-top: 30px;
 }
-
-/*
-h4 {
-    text-transform: uppercase;
-    font-weight: bold;
-}
-*/
 
 .offer-city {
     margin: 0 0 0 60px;
@@ -82,23 +76,25 @@ h4 {
     background-color: #d0262b !important;
     color: #fff !important;
 }
+
 .btn-num:hover {
-        border: 2px solid #d0262b !important;
-background-color: #fff !important;
+    border: 2px solid #d0262b !important;
+    background-color: #fff !important;
     color: #d0262b !important;
 }
 
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 500px) {
-
    .offer-city {
         margin: 0;
         padding: 10px;
     }
+    
     .offer-city li {
         padding: 5px;
     }
+    
     .call-button-container {
         text-align: center;
     }
@@ -106,5 +102,4 @@ background-color: #fff !important;
     h4 {
         text-align: center;
     }
-    
 }

@@ -3,7 +3,8 @@
 body {
     margin: 0 auto;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     max-width: 1300px;
     overflow-x: hidden;
 }
@@ -12,16 +13,16 @@ header {
     margin: 0;
     padding: 0;
 }
-section {
-    padding-top: 30px;
-}
 h4 {
     font-family: 'Open Sans', sans-serif;
 }
+
+/* NAVIGATION */
 nav {
     height: 100px;
     line-height: 100px;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 nav i,
@@ -43,16 +44,12 @@ nav .lock-logo {
     vertical-align: middle;
 }
 
-#fb-root {
-    margin-top: 40px;
-    padding-left: 10px;
-}
 
 .logo {
-    font-family: 'Ubuntu Mono', 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
     font-weight: 700;
-    font-size: 1.3em;
-    letter-spacing: 1.1;
+    font-size: 1.2em;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
@@ -97,8 +94,11 @@ nav li:last-of-type {
 .btn-floating {
     border: 1px solid #fff;
 }
- .bg-container {
-    background-image: url('../img/background.jpg');
+
+/* HERO IMAGE */
+
+.bg-container {
+    background-image: url('../img/bg-texture.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
@@ -124,14 +124,18 @@ nav li:last-of-type {
     left: 0;
     right: 0;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 #motto {
     margin-top: 50px;
 }
+
 .motto {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     display: inline-block;
     z-index: 100;
     padding: 15px;
@@ -141,7 +145,7 @@ nav li:last-of-type {
     border: 0;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 1.1;
+    letter-spacing: 2px;
 }
 
 .hours {
@@ -165,14 +169,27 @@ nav li:last-of-type {
 }
 
 .hero-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
+
+/*Facebook likes */
+
+#fb-root {
+    margin-top: 40px;
+    padding-left: 10px;
+}
+
 
 .fb-like {
     margin-top: 38px;
     margin-left: 20px;
 }
+/* Hero call btn */
 
 .call-btn {
     margin: 30px 0 0;
@@ -197,8 +214,9 @@ nav li:last-of-type {
 .motto-keys img {
     height: 120px;
 }
+
 .motto-keys .motto-question {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .motto-keys h5:last-of-type {
@@ -248,17 +266,9 @@ nav li:last-of-type {
 .localisations li:hover {
     background-color: #f5f5f5;
 }
-.map {
-    width: 100%;
-}
 
-.map img {
-    width: 50%;
-    height: auto;
-}
+/* ABOUT */
 
-
-/* O firmie */
 .about {
     background-color: #f8f8f8;
     padding-top: 10px;
@@ -270,7 +280,7 @@ nav li:last-of-type {
     margin-bottom: 10px;
 }
 
-/* Licencja policji */
+/* SECTION POLICE */
 
 .section-police {
     height: 300px;
@@ -298,7 +308,6 @@ nav li:last-of-type {
 }
 
 .section-police .lockers {
-/*    height: 100%;*/
     min-height: 300px;
 }
 
@@ -308,6 +317,7 @@ nav li:last-of-type {
 }
 
 /* CONTACT */
+
 .contact .row {
     margin-bottom: 0;
 }
@@ -321,16 +331,6 @@ nav li:last-of-type {
     padding-bottom: 0;
 }
 
-
-.contact .container {
-    margin-bottom: 10px;
-    padding-bottom: 0;
-}
-
-.contact > .row > .row {
-    margin: 0;
-}
-
 .contact p {
     margin: 0;
     font-size: 1.1em;
@@ -338,6 +338,7 @@ nav li:last-of-type {
 
 .contact-info {
     font-weight: 500;
+    color: #000;
 }
 
 .contact-info p:first-of-type {
@@ -347,16 +348,26 @@ nav li:last-of-type {
 .contact-info .fa {
     padding-top: 10px;
     font-size: 2.5em;
-    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
 }
 
 .contact-info .fa:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
     cursor: pointer;
+}
+
+.contact-info img {
+    width: 80px;
 }
 
 .company {
     font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
     text-transform: uppercase;
     padding-right: 4px;
 }
@@ -376,20 +387,17 @@ footer {
 }
 
 .just {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 footer p {
     margin: 0;
 }
+
 .page-footer {
     font-size: 0.6em;
-}
-
-/* CITY PAGES */
-
-.call-btn {
-    margin-bottom: 2.5rem;
 }
 
 /* MEDIA QUERIES */
@@ -410,18 +418,20 @@ footer p {
     }
     
     .bg-container {
-        background-image: url('../img/background-no-logo-big.jpg');
+        background-image: url('../img/bg-texture-no-logo-medium.jpg');
         background-size: cover;
         min-height: 600px;
         height: auto;
     }
     
     .section-police {
-        height: 280px;
+        height: 250px;
     }
+    
     .section-police .logo-police {
         width: 280px;
     }
+        
     .contact-info {
         margin: 20px 0;
     }
@@ -434,7 +444,7 @@ footer p {
     }
 
     .bg-container {
-        background-image: url('../img/background-for-mobile.jpg');
+        background-image: url('../img/bg-texture-no-logo.jpg');
         height: 600px;
         background-size: cover; 
     }
@@ -455,9 +465,7 @@ footer p {
     }
     
     .hours {
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 1.1;
+        letter-spacing: 2px;
         margin: -7px 0 0;
         text-align: center;
     }
@@ -467,8 +475,10 @@ footer p {
     }
     
     .hero-btns {
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
+    
     .fb-like {
         margin-left: 0;
     }
@@ -477,20 +487,19 @@ footer p {
         float: none !important;
         text-align: center;
     }    
+    
+    .motto-keys {
+        padding: 30px 0;
+    }
+
     .offer .fa {
         font-size: 1em;
     }
         
-    .police {
-        height: 300px;
-        padding-right: 15px;
-        font-size: 1.4em;
-    }
     .police-text {
         height: 250px;
     }
         
-    
     .cities {
         font-size: 1.1em;
     }
@@ -503,6 +512,7 @@ footer p {
         padding-top: 0;
         font-size: 1.8em;
     }
+    
     .section-police .lockers {
         min-height: 200px;
     }
@@ -518,14 +528,15 @@ footer p {
     .info-section .col:last-of-type {
         padding: 30px 0;
     }
+    
     .contact-info {
         padding: 30px 0;
         border-top: 2px solid #eee;
     }
+    
     .contact-info img {
         width: 50px;
     }
-
 }
 
 @media only screen and (min-width: 971px) {
@@ -535,20 +546,11 @@ footer p {
         background-size: contain;
     }
 
-    .police {
-        height: 550px;
-        background-attachment: fixed;
-    }
-
-    .police img {
-        width: 500px;
-    }
-}
-
 @media only screen and (min-width: 1050px) {
     .bg-container {
         height: 650px;
     }
+    
     .section-police {
         height: 320px;
     }
@@ -565,14 +567,6 @@ footer p {
     body {
         border-left: 1px solid #eee;
         border-right: 1px solid #eee;
-    }
-    
-/*
-    .bg-container {
-        background-size: contain;
-        min-height: 700px;
-        height: auto;
-    }
-*/
+    }    
 }
 

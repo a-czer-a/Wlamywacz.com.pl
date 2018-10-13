@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 
 <html lang="pl-PL">
+
 <head>
     <title>Włamywacz - awaryjne otwieranie zamków</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8">
     <meta name="description" content="Strona firmy Włamywacz">
     <meta name="theme-color" content="#ffffff">
-    
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preload" as="font" href="fonts/roboto/Roboto-Regular.woff2">
+    <link rel="preload" as="font" href="fonts/roboto/Roboto-Medium.woff2">
+    <link rel="preload" as="font" href="fonts/roboto/Roboto-Bold.woff2">
     <link rel="dns-prefetch" href="//https://maxcdn.bootstrapcdn.com">
+    <link rel='dns-prefetch' href='//fonts.googleapis.com'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Sans+Pro:700" rel="stylesheet">
+    <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--    <link rel="stylesheet" type="text/css" href="css/aos.css"/>-->
+
     <link rel="dns-prefetch" href="//https://connect.facebook.net">
     <link rel="dns-prefetch" href="//https://www.facebook.com">
-    <link rel='dns-prefetch' href='//fonts.googleapis.com'>
-
-<!--    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:700|Open+Sans:400,700,800">
     <link rel="shortcut icon" type="image/png" href="img/logo-shortcut.jpg">
     <link rel="preload" as="image" href="img/handtinytrans.gif">
     <link rel="preload" as="image" href="img/logo-small.jpg">
     <link rel="manifest" href="webmanifest.json">
-
-<!--    <link rel="preload" as="image" href="img/background-big.jpg">-->
-<!--    <link rel="preload" as="image" href="img/background-no-logo-big.jpg">-->
-
+    <noscript>
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"/>
+        <link type="text/css" rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/aos.css"/>
+    </noscript>
 </head>
 
 <body>
+
     <!-- NAVIGATION -->
     <header>
         <nav class="nav-wrapper white">
             <a href="index.html" class="brand-logo black-text valign-wrapper" aria-label="Link do strony głównej">
-                <img id="lock-logo" class="responsive-img lock-logo" type="image/jpeg" src="img/logo-small.jpg" alt="Logo firmy">
+                <img id="lock-logo" class="responsive-img lock-logo" src="img/logo-small.jpg" alt="Logo firmy">
                 <span class="logo hide-on-med-and-down">włamywacz<span class="logo-web red-text text-darken-3">.com.pl</span></span>
-
-            <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons red-text text-darken-3">menu</i></a>
+                <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons red-text text-darken-3">menu</i></a>
             </a>
             <ul class="main-nav right hide-on-med-and-down">
                 <li><a href="#oferta" class="black-text">Oferta</a></li>
@@ -57,11 +57,11 @@
         </nav>
 
     </header>
-    
-    <div class="bg-container " >
+
+    <div class="bg-container ">
         <div class="container bg-content">
-                             
-<!--            MOTTO -->
+
+            <!--            MOTTO -->
             <div id="motto" class="row">
                 <div class="row ">
                     <div class="col l12 m12 s12">
@@ -69,105 +69,104 @@
                     </div>
                 </div>
             </div>
-            
-<!--            HOURS -->
+
+            <!--            HOURS -->
             <div id="hours" class="row">
                 <div class="col l12 m12 s12">
                     <span class="hours red-text">serwis 24/7</span>
                 </div>
             </div>
 
-<!--            CITY LIST-->
+            <!--            CITY LIST-->
             <div class="row">
-<!--                <div class="col l10 m9 s12">-->
-                    <ul class="cities flow-text">
-                        <li>Rybnik</li>
-                        <li>Żory</li>
-                        <li>Jastrzębie-Zdrój</li>
-                        <li>Wodzisław&nbsp;Śląski</li>
-                        <li>Mikołów</li>
-                        <li>Ruda&nbsp;Śląska</li>
-                        <li>Racibórz</li>
-                        <li>Gliwice</li>
-                        <li>Katowice</li>
-                    </ul>
-<!--                </div>-->
+                <!--                <div class="col l10 m9 s12">-->
+                <ul class="cities flow-text">
+                    <li>Rybnik</li>
+                    <li>Żory</li>
+                    <li>Jastrzębie-Zdrój</li>
+                    <li>Wodzisław&nbsp;Śląski</li>
+                    <li>Mikołów</li>
+                    <li>Ruda&nbsp;Śląska</li>
+                    <li>Racibórz</li>
+                    <li>Gliwice</li>
+                    <li>Katowice</li>
+                </ul>
+                <!--                </div>-->
             </div>
 
 
             <!--             CALL BUTTON -->
             <div class="row call-btn-container ">
                 <div class="col l6 m6 s12 call-btn-col ">
-                   <div class="hero-btns walign-wrapper text-center">
-                    <a href="tel:+48669389735" class="call-btn waves-effect waves-light btn-large red darken-3"><i class="fa fa-phone right " aria-hidden="true"></i>669 389 735</a>
-                    <div id="fb-root"></div>
-                      <script>(function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (d.getElementById(id)) return;
-                        js = d.createElement(s); js.id = id;
-                        js.src = "https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v3.0";
-                        fjs.parentNode.insertBefore(js, fjs);
-                      }(document, 'script', 'facebook-jssdk'));
-                      </script>
-                      <div class="fb-like" 
-                        data-href="https://www.facebook.com/wlamywacz.rybnik/" 
-                        data-layout="box_count" 
-                        data-action="like" 
-                        data-show-faces="false">
-                      </div>
+                    <div class="hero-btns walign-wrapper text-center">
+                        <a href="tel:+48669389735" class="call-btn waves-effect waves-light btn-large red darken-3"><i class="fa fa-phone right " aria-hidden="true"></i>669 389 735</a>
+                        <div id="fb-root"></div>
+                        <script>
+                            (function(d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = "https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v3.0";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));
+
+                        </script>
+                        <div class="fb-like" data-href="https://www.facebook.com/wlamywacz.rybnik/" data-layout="box_count" data-action="like" data-show-faces="false">
+                        </div>
                     </div>
                 </div>
             </div>
-            
-        </div>
-<!--        END OF HERO SECTION-->
 
-<!--           CONTACT AND SOCIAL MENU BUTTON -->
-            <div class="row">
-                <div class="fixed-action-btn click-to-toggle">
-                    <a class="btn-floating btn-large black">
-                          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-                    </a>
-                    <ul>
-                        <li><a class="btn-floating red darken-1" href="https://www.facebook.com/wlamywacz.rybnik/"><i class="fa fa-facebook" aria-hidden="false" title="Strona na Facebooku"></i><span class="sr-only">Strona firmy na Facebooku</span></a></li>
-                        <li><a class="btn-floating grey" href="tel:+48669389735"><i class="fa fa-mobile black-text" aria-hidden="false" title="Zadzwoń do nas"></i><span class="sr-only">Telefon kontaktowy</span>
+        </div>
+        <!--        END OF HERO SECTION-->
+
+        <!--           CONTACT AND SOCIAL MENU BUTTON -->
+        <div class="row">
+            <div class="fixed-action-btn click-to-toggle">
+                <a class="btn-floating btn-large black">
+                    <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                </a>
+                <ul>
+                    <li><a class="btn-floating red darken-1" href="https://www.facebook.com/wlamywacz.rybnik/"><i class="fa fa-facebook" aria-hidden="false" title="Strona na Facebooku"></i><span class="sr-only">Strona firmy na Facebooku</span></a></li>
+                    <li><a class="btn-floating grey" href="tel:+48669389735"><i class="fa fa-mobile black-text" aria-hidden="false" title="Zadzwoń do nas"></i><span class="sr-only">Telefon kontaktowy</span>
 </a></li>
-                        <li><a class="btn-floating grey darken-3" href="mailto: michal.grzech@gmail.com"><i class="material-icons" aria-hidden="false" title="Napisz do nas">mail</i><span class="sr-only">Adres e-mail</span></a></li>
-                    </ul>
-                </div>
+                    <li><a class="btn-floating grey darken-3" href="mailto:michal.grzech@gmail.com"><i class="material-icons" aria-hidden="false" title="Napisz do nas">mail</i><span class="sr-only">Adres e-mail</span></a></li>
+                </ul>
             </div>
+        </div>
 
     </div>
 
-   <div class="motto-keys flow-text ">
-      <div class=" row container">
-           <div class="col s12 m3 l2 center">
-               <img src="img/002-question.svg" alt="Ikona ze znakiem zapytania" aria-hidden="true">
-           </div>
-           <div class="col s12 m9 l9 offset-l1  ">
+    <div class="motto-keys flow-text ">
+        <div class=" row container">
+            <div class="col s12 m3 l2 center">
+                <img src="img/002-question.svg" alt="Ikona ze znakiem zapytania" aria-hidden="true">
+            </div>
+            <div class="col s12 m9 l9 offset-l1  ">
                 <h5 class="motto-question">Zgubiłeś wszystkie klucze do auta?</h5>
                 <h5>To nie problem! Odtworzymy klucz z&nbsp;pilotem i&nbsp;immobilizerem na miejscu u&nbsp;Ciebie.</h5>
-           </div>
-      </div>
-   </div>
-   
+            </div>
+        </div>
+    </div>
+
     <!--   OFFER -->
     <div class=" container offer">
         <div class="section">
-            <h4 id="oferta" name="offer" class=" header ">Oferta</h4>
+            <h4 id="oferta" class="header">Oferta</h4>
             <div class="row ">
                 <div class="col s12 m4 ">
-                    <div class="icon-block" data-aos="slide-up" data-aos-duration="700">
+                    <div class="icon-block" data-aos="slide-up" data-aos-duration="500" data-aos-once="true">
                         <h2 class="center red-text text-darken-3"><i class="fa fa-home" aria-hidden="true"></i></h2>
                         <h5 class="center ">Awaryjne otwieranie domów i&nbsp;mieszkań</h5>
 
                         <p class="light ">Otwieranie zamków standardowych i&nbsp;antywłamaniowych</p>
-                        <p class="light">Awaryjne otwieranie drzwi Gerda, Delta, Dierre i&nbsp;innych</p>    
+                        <p class="light">Awaryjne otwieranie drzwi Gerda, Delta, Dierre i&nbsp;innych</p>
                     </div>
                 </div>
 
                 <div class="col s12 m4 ">
-                    <div class="icon-block" data-aos="slide-up" data-aos-duration="700">
+                    <div class="icon-block" data-aos="slide-up" data-aos-duration="500" data-aos-once="true">
                         <h2 class="center red-text text-darken-3"><i class="fa fa-car" aria-hidden="true"></i></h2>
                         <h5 class="center ">Awaryjne otwieranie samochodów</h5>
 
@@ -179,7 +178,7 @@
                     </div>
                 </div>
                 <div class="col s12 m4 ">
-                    <div class="icon-block" data-aos="slide-up" data-aos-duration="700">
+                    <div class="icon-block" data-aos="slide-up" data-aos-duration="500" data-aos-once="true">
                         <h2 class="center red-text text-darken-3"><i class="fa fa-cogs" aria-hidden="true"></i></h2>
                         <h5 class="center ">Naprawa i&nbsp;wymiana zamków</h5>
 
@@ -188,12 +187,12 @@
                         <p class="light ">Zmiana kodu nacięcia klucza i&nbsp;zamków (wówczas po kradzieży kluczy nie trzeba wymieniać wszystkich zamków na nowe)</p>
                     </div>
                 </div>
-                
+
             </div>
 
             <div class="row">
                 <div class="col s12 m4">
-                    <div class="icon-block " data-aos="slide-up" data-aos-duration="700">
+                    <div class="icon-block " data-aos="slide-up" data-aos-duration="500" data-aos-once="true">
                         <h2 class="center red-text text-darken-3"><i class="fa fa-key activator" aria-hidden="true"></i></h2>
                         <h5 class="center ">Dorabianie i&nbsp;kodowanie kluczy</h5>
 
@@ -205,7 +204,7 @@
                 </div>
 
                 <div class="col s12 m4">
-                    <div class="icon-block " data-aos="slide-up" data-aos-duration="700">
+                    <div class="icon-block " data-aos="slide-up" data-aos-duration="500" data-aos-once="true">
                         <h2 class="center red-text text-darken-3"><i class="fa fa-battery-half" aria-hidden="true"></i></h2>
                         <h5 class="center ">Regeneracja stacyjek, kodowanie pilotów samochodowych</h5>
 
@@ -218,7 +217,7 @@
                 </div>
 
                 <div class="col s12 m4">
-                    <div class="icon-block " data-aos="slide-up" data-aos-duration="700">
+                    <div class="icon-block " data-aos="slide-up" data-aos-duration="500" data-aos-once="true">
                         <h2 class="center red-text text-darken-3"><i class="fa fa-building" aria-hidden="true"></i></h2>
                         <h5 class="center ">Naprawa i&nbsp;serwis drzwi</h5>
                         <p class="light ">Montaż systemu jednego klucza Master Key</p>
@@ -231,25 +230,25 @@
 
         </div>
     </div>
-    
-        <div class="row section-police">
-            <div class="col s12 m6 l7">
-                <img class="responsive-img lockers b-lazy" src="img/handtinytrans.gif" data-src="img/lockers-red.jpeg" srcset="img/lockers-red-cropped.jpeg 700w" sizes="(max-width: 600px) 700w" alt="Zdjęcie szafek">
-            </div>
-            <div class="police-text col s12 m6 l5 center-align valign-wrapper">
-                <div class="police-text-wrapper">
-                   <h5 class=" white-text text-darken-3">Posiadamy licencję Policji</h5>
-                   <img class="responsive-img logo-police b-lazy" src="img/handtinytrans.gif" data-src="img/police-logo-white.png" alt="Logo policji">
-                </div>
+
+    <div class="row section-police">
+        <div class="col s12 m6 l7">
+            <img class="responsive-img lockers b-lazy" src="img/handtinytrans.gif" data-src="img/lockers-red.jpeg" srcset="img/lockers-red-cropped.jpeg 700w" sizes="(max-width: 600px) 700w" alt="Zdjęcie szafek">
+        </div>
+        <div class="police-text col s12 m6 l5 center-align valign-wrapper">
+            <div class="police-text-wrapper">
+                <h5 class=" white-text text-darken-3">Posiadamy licencję Policji</h5>
+                <img class="responsive-img logo-police b-lazy" src="img/handtinytrans.gif" data-src="img/police-logo-white.png" alt="Logo policji">
             </div>
         </div>
+    </div>
 
     <!--    LOCALISATIONS -->
 
     <div class="section black-text localisations valign-wrapper">
         <div class="row container">
             <h4 id="obszar" class=" header red-text text-darken-3">Obszar działania</h4>
-            <ul class="flow-text ">
+            <ul class="flow-text">
                 <li><a class="black-text " href="rybnik.html">Rybnik</a></li>
                 <li><a class="black-text " href="zory.html">Żory</a></li>
                 <li><a class="black-text " href="jastrzebie.html">Jastrzębie-Zdrój</a></li>
@@ -262,13 +261,13 @@
             </ul>
         </div>
     </div>
-  
 
 
-<!--        ABOUT -->
+
+    <!--        ABOUT -->
     <div class="section about black-text lighten-5">
         <div class="row container ">
-            <h4 id="firma" class=" header red-text text-darken-3">O firmie</h4>
+            <h4 id="firma" class="header red-text text-darken-3">O firmie</h4>
             <p>WŁAMYWACZ to doświadczona firma, której główne usługi to otwieranie samochodów, awaryjne otwieranie samochodów i&nbsp;otwieranie drzwi. Otwieranie drzwi bez klucza czy też otwieranie drzwi samochodowych wykonujemy z&nbsp;licencją policji.</p>
             <p>Jeśli masz problem z&nbsp;otwarciem samochodu, otwarciem mieszkań, otwarciem auta to zapraszamy do kontaktu z&nbsp;Włamywaczem.</p>
             <p>Firma korzysta z&nbsp;zestawów do otwierania zamków i&nbsp;otwierania auta bez kluczyka. Bez problemu awaryjnie otworzy drzwi, samochód bez kluczyka, mieszkanie czy sejf, awaryjnie zmieni kod zapadek w&nbsp;zamkach lub dorobi nowy klucz.</p>
@@ -277,22 +276,21 @@
 
 
     <!-- CONTACT INFO -->
-    <div id="kontakt" class="contact section info-section ">
+    <div id="kontakt" class="contact section info-section">
         <div class="row info-section-row valign-wrapper">
             <div class="col s6 offset-s3 m5 l4 offset-l1 hand-img text-center">
                 <img class="b-lazy" src="img/handtinytrans.gif" data-src="img/mockup.jpg" alt="Ręka trzymająca telefon">
             </div>
-            <div class="col s12 m7 l7 contact-info ">
+            <div class="col s12 m7 l7 contact-info">
                 <div class="center-align">
-                   <img class="b-lazy" src="img/handtinytrans.gif" data-src="img/logo-small.jpg" alt="Logo firmy">
+                    <img class="b-lazy" src="img/handtinytrans.gif" data-src="img/logo-small.jpg" alt="Logo firmy">
                 </div>
                 <p class="center-align "><span class="red-text text-darken-3 company ">Włamywacz</span> Michał Grzech</p>
                 <p class="center-align num">669 389 735</p>
                 <p class="center-align ">NIP: 642-283-64-74</p>
                 <p class="center-align ">Licencja nr: 0024495</p>
                 <div class="center-align ">
-                    <a href="https://www.facebook.com/wlamywacz.rybnik/"><i class="fa fa-facebook-official black-text " aria-hidden="false " title="Znajdź nas na Facebooku"></i><span class="sr-only">Strona firmy na Facebooku</span>
-</a>
+                    <a href="https://www.facebook.com/wlamywacz.rybnik/"><i class="fa fa-facebook-official black-text " aria-hidden="false" title="Znajdź nas na Facebooku"></i><span class="sr-only">Strona firmy na Facebooku</span></a>
                 </div>
             </div>
         </div>
@@ -305,47 +303,75 @@
         </div>
     </footer>
 
-    <script type="text/javascript " src="js/jquery-3.2.1-min.js"></script>
-    <script type="text/javascript">
-function downloadJSAtOnload() {
-var element = document.createElement("script");
-element.src = "js/script_materializeCSS.js";
-document.body.appendChild(element);
-}
-if (window.addEventListener)
-window.addEventListener("load", downloadJSAtOnload, false);
-else if (window.attachEvent)
-window.attachEvent("onload", downloadJSAtOnload);
-else window.onload = downloadJSAtOnload;
-</script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-<!--    <script src="js/script_materializeCSS.js "></script>-->
+    <script src="js/jquery-3.2.1-min.js"></script>
+    <script>
+        function downloadJSAtOnload() {
+            var element = document.createElement("script");
+            element.src = "js/script_materializeCSS.js";
+            document.body.appendChild(element);
+        }
+        if (window.addEventListener)
+            window.addEventListener("load", downloadJSAtOnload, false);
+        else if (window.attachEvent)
+            window.attachEvent("onload", downloadJSAtOnload);
+        else window.onload = downloadJSAtOnload;
+
+    </script>
+    <script src="js/materialize.min.js"></script>
     <script src="js/blazy.js"></script>
     <script>
-        ;(function() {
+        ;
+        (function() {
             // Initialize
             var bLazy = new Blazy();
         })();
+
     </script>
-    
-<!--
-     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTUdj7ALkguCKmY7Uj3K-7V-8NHgouz3Q&v=3&callback=initMap">
-    </script>
--->
     <script src="js/aos.js"></script>
     <script>
-        AOS.init();
+        (function() {
+            var aos = document.createElement('link');
+            aos.type = 'text/css';
+            aos.rel = 'stylesheet';
+            aos.href = 'css/aos.css';
+
+            var materialize = document.createElement('link');
+            materialize.type = 'text/css';
+            materialize.rel = 'stylesheet';
+            materialize.href = 'css/materialize.min.css';
+
+            var styles = document.createElement('link');
+            styles.type = 'text/css';
+            styles.rel = 'stylesheet';
+            styles.href = 'css/styles.css';
+
+            document.head.insertBefore(materialize, document.head.childNodes[document.head.childNodes.length - 1].nextSibling);
+            document.head.insertBefore(styles, document.head.childNodes[document.head.childNodes.length - 1].nextSibling);
+            document.head.insertBefore(aos, document.head.childNodes[document.head.childNodes.length - 1].nextSibling);
+        })();
+
     </script>
-<script>
+
+    <script>
+        AOS.init({
+            startEvent: 'load'   
+        });
+        
+        $(window).on('load', function() {
+            AOS.refresh();
+        });
+    </script>
+
+    <script>
         if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js')
-        .then(registration =>
-            console.log(`Registration succeeded with ${registration.scope}`)
-        ).catch(error =>
-            console.log(`Registration failed with + ${error}`)
-        )
-};
+            navigator.serviceWorker.register('/sw.js')
+                .then(registration =>
+                    console.log(`Registration succeeded with ${registration.scope}`)
+                ).catch(error =>
+                    console.log(`Registration failed with + ${error}`)
+                )
+        };
+
     </script>
 
 

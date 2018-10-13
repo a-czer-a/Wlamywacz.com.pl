@@ -15,6 +15,11 @@
           "size": "100x114"
         },
         {
+          "src": "img/logo-192.jpg",
+          "type": "image/jpeg",
+          "size": "192x218"
+        },
+        {
           "src": "img/logo-medium.jpg",
           "type": "image/jpeg",
           "size": "480x545"
