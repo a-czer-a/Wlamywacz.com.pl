@@ -8,17 +8,15 @@
     <meta charset="UTF-8">
     <meta name="description" content="Strona firmy Włamywacz">
     <meta name="theme-color" content="#ffffff">
-    <link rel="preload" as="font" href="fonts/roboto/Roboto-Regular.woff2">
-    <link rel="preload" as="font" href="fonts/roboto/Roboto-Medium.woff2">
-    <link rel="preload" as="font" href="fonts/roboto/Roboto-Bold.woff2">
+    <!--
+    <link rel="preload" as="font" href="fonts/roboto/Roboto-Regular.woff">
+    <link rel="preload" as="font" href="fonts/roboto/Roboto-Medium.woff">
+    <link rel="preload" as="font" href="fonts/roboto/Roboto-Bold.woff">
+-->
     <link rel="dns-prefetch" href="//https://maxcdn.bootstrapcdn.com">
     <link rel='dns-prefetch' href='//fonts.googleapis.com'>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Sans+Pro:700" rel="stylesheet">
-    <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!--    <link rel="stylesheet" type="text/css" href="css/aos.css"/>-->
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="dns-prefetch" href="//https://connect.facebook.net">
     <link rel="dns-prefetch" href="//https://www.facebook.com">
     <link rel="shortcut icon" type="image/png" href="img/logo-shortcut.jpg">
@@ -27,12 +25,22 @@
     <link rel="manifest" href="webmanifest.json">
     <noscript>
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css"/>
-        <link type="text/css" rel="stylesheet" href="css/styles.css">
+        <link type="text/css" rel="stylesheet" href="css/styles-min.css">
         <link rel="stylesheet" type="text/css" href="css/aos.css"/>
     </noscript>
 </head>
 
 <body>
+    <!--    PRELOADER -->
+
+    <div id="loader-wrapper" style="position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 2000; background: #fff;">
+        <div class="load" style="position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 100px; height: 100px; color: #fff">
+            <hr/ style="border: 0">
+            <hr/ style="border: 0">
+            <hr/ style="border: 0">
+            <hr/ style="border: 0">
+        </div>
+    </div>
 
     <!-- NAVIGATION -->
     <header>
@@ -40,7 +48,7 @@
             <a href="index.html" class="brand-logo black-text valign-wrapper" aria-label="Link do strony głównej">
                 <img id="lock-logo" class="responsive-img lock-logo" src="img/logo-small.jpg" alt="Logo firmy">
                 <span class="logo hide-on-med-and-down">włamywacz<span class="logo-web red-text text-darken-3">.com.pl</span></span>
-                <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons red-text text-darken-3">menu</i></a>
+                <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="fas fa-bars fa-2x red-text text-darken-3"></i></a>
             </a>
             <ul class="main-nav right hide-on-med-and-down">
                 <li><a href="#oferta" class="black-text">Oferta</a></li>
@@ -99,7 +107,7 @@
             <div class="row call-btn-container ">
                 <div class="col l6 m6 s12 call-btn-col ">
                     <div class="hero-btns walign-wrapper text-center">
-                        <a href="tel:+48669389735" class="call-btn waves-effect waves-light btn-large red darken-3"><i class="fa fa-phone right " aria-hidden="true"></i>669 389 735</a>
+                        <a href="tel:+48669389735" class="call-btn waves-effect waves-light btn-large red darken-3"><i class="fas fa-phone right " aria-hidden="true"></i>669 389 735</a>
                         <div id="fb-root"></div>
                         <script>
                             (function(d, s, id) {
@@ -125,13 +133,13 @@
         <div class="row">
             <div class="fixed-action-btn click-to-toggle">
                 <a class="btn-floating btn-large black">
-                    <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                    <i class="fas fa-paper-plane" aria-hidden="true"></i>
                 </a>
                 <ul>
-                    <li><a class="btn-floating red darken-1" href="https://www.facebook.com/wlamywacz.rybnik/"><i class="fa fa-facebook" aria-hidden="false" title="Strona na Facebooku"></i><span class="sr-only">Strona firmy na Facebooku</span></a></li>
-                    <li><a class="btn-floating grey" href="tel:+48669389735"><i class="fa fa-mobile black-text" aria-hidden="false" title="Zadzwoń do nas"></i><span class="sr-only">Telefon kontaktowy</span>
+                    <li><a class="btn-floating red darken-3" href="https://www.facebook.com/wlamywacz.rybnik/"><i class="fab fa-facebook-f" aria-hidden="false" title="Strona na Facebooku"></i><span class="sr-only">Strona firmy na Facebooku</span></a></li>
+                    <li><a class="btn-floating grey" href="tel:+48669389735"><i class="fas fa-mobile-alt black-text" aria-hidden="false" title="Zadzwoń do nas"></i><span class="sr-only">Telefon kontaktowy</span>
 </a></li>
-                    <li><a class="btn-floating grey darken-3" href="mailto:michal.grzech@gmail.com"><i class="material-icons" aria-hidden="false" title="Napisz do nas">mail</i><span class="sr-only">Adres e-mail</span></a></li>
+                    <li><a class="btn-floating grey darken-3" href="mailto:michal.grzech@gmail.com"><i class="fas fa-envelope" aria-hidden="false" title="Napisz do nas"></i><span class="sr-only">Adres e-mail</span></a></li>
                 </ul>
             </div>
         </div>
@@ -157,7 +165,7 @@
             <div class="row ">
                 <div class="col s12 m4 ">
                     <div class="icon-block" data-aos="slide-up" data-aos-duration="500" data-aos-once="true">
-                        <h2 class="center red-text text-darken-3"><i class="fa fa-home" aria-hidden="true"></i></h2>
+                        <h2 class="center red-text text-darken-3"><i class="fas fa-home" aria-hidden="true"></i></h2>
                         <h5 class="center ">Awaryjne otwieranie domów i&nbsp;mieszkań</h5>
 
                         <p class="light ">Otwieranie zamków standardowych i&nbsp;antywłamaniowych</p>
@@ -167,7 +175,7 @@
 
                 <div class="col s12 m4 ">
                     <div class="icon-block" data-aos="slide-up" data-aos-duration="500" data-aos-once="true">
-                        <h2 class="center red-text text-darken-3"><i class="fa fa-car" aria-hidden="true"></i></h2>
+                        <h2 class="center red-text text-darken-3"><i class="fas fa-car" aria-hidden="true"></i></h2>
                         <h5 class="center ">Awaryjne otwieranie samochodów</h5>
 
                         <p class="light ">Otwieranie samochodów z zatrzaśniętymi kluczami</p>
@@ -179,7 +187,7 @@
                 </div>
                 <div class="col s12 m4 ">
                     <div class="icon-block" data-aos="slide-up" data-aos-duration="500" data-aos-once="true">
-                        <h2 class="center red-text text-darken-3"><i class="fa fa-cogs" aria-hidden="true"></i></h2>
+                        <h2 class="center red-text text-darken-3"><i class="fas fa-cogs" aria-hidden="true"></i></h2>
                         <h5 class="center ">Naprawa i&nbsp;wymiana zamków</h5>
 
                         <p class="light ">Naprawa zamków samochodowych</p>
@@ -193,7 +201,7 @@
             <div class="row">
                 <div class="col s12 m4">
                     <div class="icon-block " data-aos="slide-up" data-aos-duration="500" data-aos-once="true">
-                        <h2 class="center red-text text-darken-3"><i class="fa fa-key activator" aria-hidden="true"></i></h2>
+                        <h2 class="center red-text text-darken-3"><i class="fas fa-key" aria-hidden="true"></i></h2>
                         <h5 class="center ">Dorabianie i&nbsp;kodowanie kluczy</h5>
 
                         <p class="light ">Dorabianie i kodowanie kluczy samochodowych</p>
@@ -205,7 +213,7 @@
 
                 <div class="col s12 m4">
                     <div class="icon-block " data-aos="slide-up" data-aos-duration="500" data-aos-once="true">
-                        <h2 class="center red-text text-darken-3"><i class="fa fa-battery-half" aria-hidden="true"></i></h2>
+                        <h2 class="center red-text text-darken-3"><i class="fas fa-battery-empty" aria-hidden="true"></i></h2>
                         <h5 class="center ">Regeneracja stacyjek, kodowanie pilotów samochodowych</h5>
 
                         <p class="light ">Regeneracja stacyjek pod klucz</p>
@@ -218,7 +226,7 @@
 
                 <div class="col s12 m4">
                     <div class="icon-block " data-aos="slide-up" data-aos-duration="500" data-aos-once="true">
-                        <h2 class="center red-text text-darken-3"><i class="fa fa-building" aria-hidden="true"></i></h2>
+                        <h2 class="center red-text text-darken-3"><i class="fas fa-door-open" aria-hidden="true"></i></h2>
                         <h5 class="center ">Naprawa i&nbsp;serwis drzwi</h5>
                         <p class="light ">Montaż systemu jednego klucza Master Key</p>
                         <p class="light ">Wymiana wkładki w drzwiach standardowych i&nbsp;antywłamaniowych (z&nbsp;kompletem kluczy)</p>
@@ -290,7 +298,7 @@
                 <p class="center-align ">NIP: 642-283-64-74</p>
                 <p class="center-align ">Licencja nr: 0024495</p>
                 <div class="center-align ">
-                    <a href="https://www.facebook.com/wlamywacz.rybnik/"><i class="fa fa-facebook-official black-text " aria-hidden="false" title="Znajdź nas na Facebooku"></i><span class="sr-only">Strona firmy na Facebooku</span></a>
+                    <a href="https://www.facebook.com/wlamywacz.rybnik/"><i class="fab fa-facebook black-text " aria-hidden="false" title="Znajdź nas na Facebooku"></i><span class="sr-only">Strona firmy na Facebooku</span></a>
                 </div>
             </div>
         </div>
@@ -305,6 +313,16 @@
 
     <script src="js/jquery-3.2.1-min.js"></script>
     <script>
+        $('html').addClass('js');
+    </script>
+
+    <script>
+        $(window).on("load", function() {
+            $("#loader-wrapper").fadeOut();
+        });
+    </script>
+
+    <script>
         function downloadJSAtOnload() {
             var element = document.createElement("script");
             element.src = "js/script_materializeCSS.js";
@@ -315,7 +333,6 @@
         else if (window.attachEvent)
             window.attachEvent("onload", downloadJSAtOnload);
         else window.onload = downloadJSAtOnload;
-
     </script>
     <script src="js/materialize.min.js"></script>
     <script src="js/blazy.js"></script>
@@ -325,7 +342,6 @@
             // Initialize
             var bLazy = new Blazy();
         })();
-
     </script>
     <script src="js/aos.js"></script>
     <script>
@@ -343,20 +359,19 @@
             var styles = document.createElement('link');
             styles.type = 'text/css';
             styles.rel = 'stylesheet';
-            styles.href = 'css/styles.css';
+            styles.href = 'css/styles-min.css';
 
             document.head.insertBefore(materialize, document.head.childNodes[document.head.childNodes.length - 1].nextSibling);
             document.head.insertBefore(styles, document.head.childNodes[document.head.childNodes.length - 1].nextSibling);
             document.head.insertBefore(aos, document.head.childNodes[document.head.childNodes.length - 1].nextSibling);
         })();
-
     </script>
 
     <script>
         AOS.init({
-            startEvent: 'load'   
+            startEvent: 'load'
         });
-        
+
         $(window).on('load', function() {
             AOS.refresh();
         });
@@ -371,9 +386,7 @@
                     console.log(`Registration failed with + ${error}`)
                 )
         };
-
     </script>
-
 
 </body>
 

@@ -4,25 +4,113 @@ body {
     margin: 0 auto;
     padding: 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     max-width: 1300px;
     overflow-x: hidden;
 }
+
+/* PRELOADER */
+
+.js .load,
+.js #loader-wrapper {
+    display: block;
+}
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #fff;
+    display: none;
+}
+
+.load {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+.load hr {
+    border: 0;
+    margin: 0;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-animation: spin 2s ease infinite;
+            animation: spin 2s ease infinite;
+}
+
+.load :first-child {
+    background: #c62828;
+    -webkit-animation-delay: -1.5s;
+            animation-delay: -1.5s;
+}
+
+.load :nth-child(2) {
+    background: #000;
+    -webkit-animation-delay: -1s;
+            animation-delay: -1s;
+}
+
+.load :nth-child(3) {
+    background: #c62828;
+    -webkit-animation-delay: -0.5s;
+            animation-delay: -0.5s;
+}
+
+.load :last-child {
+    background: #000;
+    border: 1px solid #000;
+}
+
+@keyframes spin {
+    0%,
+    100% {
+        -webkit-transform: translate(0);
+                transform: translate(0)
+    }
+    25% {
+        -webkit-transform: translate(160%);
+                transform: translate(160%)
+    }
+    50% {
+        -webkit-transform: translate(160%, 160%);
+                transform: translate(160%, 160%)
+    }
+    75% {
+        -webkit-transform: translate(0, 160%);
+                transform: translate(0, 160%)
+    }
+}
+
+/* HEADER */
 
 header {
     margin: 0;
     padding: 0;
 }
+
 h4 {
     font-family: 'Open Sans', sans-serif;
 }
 
 /* NAVIGATION */
+
 nav {
     height: 100px;
     line-height: 100px;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
 }
 
 nav i,
@@ -57,6 +145,7 @@ nav .lock-logo {
     font-size: 0.4em;
     text-transform: lowercase;
 }
+
 nav a {
     font-weight: 700;
     text-transform: uppercase;
@@ -103,7 +192,7 @@ nav li:last-of-type {
     background-repeat: no-repeat;
     position: relative;
     height: 700px;
-} 
+}
 
 .bg-container .container {
     width: 80%;
@@ -125,8 +214,8 @@ nav li:last-of-type {
     right: 0;
     top: 50%;
     -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 #motto {
@@ -135,7 +224,7 @@ nav li:last-of-type {
 
 .motto {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     display: inline-block;
     z-index: 100;
     padding: 15px;
@@ -173,8 +262,8 @@ nav li:last-of-type {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
 }
 
 /*Facebook likes */
@@ -189,6 +278,7 @@ nav li:last-of-type {
     margin-top: 38px;
     margin-left: 20px;
 }
+
 /* Hero call btn */
 
 .call-btn {
@@ -203,6 +293,7 @@ nav li:last-of-type {
     padding: 50px 0;
     background-color: #f8f8f8;
 }
+
 .motto-keys .row {
     margin: 0 auto;
 }
@@ -276,7 +367,7 @@ nav li:last-of-type {
     border-bottom: 1px solid #eee;
 }
 
-.about .row {  
+.about .row {
     margin-bottom: 10px;
 }
 
@@ -345,18 +436,13 @@ nav li:last-of-type {
     margin-top: 10px;
 }
 
-.contact-info .fa {
+.contact-info .fab {
     padding-top: 10px;
     font-size: 2.5em;
-    -webkit-transition: all .2s ease-in-out;
-        -o-transition: all .2s ease-in-out;
-        transition: all .2s ease-in-out;
 }
 
-.contact-info .fa:hover {
-    -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
+.contact-info .fab:hover {
+    color: #d0262b !important;
     cursor: pointer;
 }
 
@@ -388,8 +474,8 @@ footer {
 
 .just {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 footer p {
@@ -416,22 +502,22 @@ footer p {
     nav .lock-logo {
         margin: 20px 0;
     }
-    
+
     .bg-container {
         background-image: url('../img/background-no-logo-big.jpg');
         background-size: cover;
         min-height: 600px;
         height: auto;
     }
-    
+
     .section-police {
         height: 250px;
     }
-    
+
     .section-police .logo-police {
         width: 280px;
     }
-        
+
     .contact-info {
         margin: 20px 0;
     }
@@ -446,39 +532,39 @@ footer p {
     .bg-container {
         background-image: url('../img/background-for-mobile.jpg');
         height: 600px;
-        background-size: cover; 
+        background-size: cover;
     }
-    
+
     .bg-container .container {
         margin: 0 auto;
     }
-    
+
     .motto {
         text-align: center;
         font-size: 1.2em;
         padding: 20px 0;
         margin: 0;
     }
-    
+
     .hours-container {
         text-align: center;
     }
-    
+
     .hours {
         letter-spacing: 2px;
         margin: -7px 0 0;
         text-align: center;
     }
-    
+
     #hours {
         text-align: center;
     }
-    
+
     .hero-btns {
         -ms-flex-pack: distribute;
-            justify-content: space-around;
+        justify-content: space-around;
     }
-    
+
     .fb-like {
         margin-left: 0;
     }
@@ -486,20 +572,20 @@ footer p {
     .call-btn-container {
         float: none !important;
         text-align: center;
-    }    
-    
+    }
+
     .motto-keys {
         padding: 30px 0;
     }
 
-    .offer .fa {
+    .offer .fas {
         font-size: 1em;
     }
-        
+
     .police-text {
         height: 250px;
     }
-        
+
     .cities {
         font-size: 1.1em;
     }
@@ -512,7 +598,7 @@ footer p {
         padding-top: 0;
         font-size: 1.8em;
     }
-    
+
     .section-police .lockers {
         min-height: 200px;
     }
@@ -528,12 +614,12 @@ footer p {
     .info-section .col:last-of-type {
         padding: 30px 0;
     }
-    
+
     .contact-info {
         padding: 30px 0;
         border-top: 2px solid #eee;
     }
-    
+
     .contact-info img {
         width: 50px;
     }
@@ -546,27 +632,26 @@ footer p {
         background-size: contain;
     }
 
-@media only screen and (min-width: 1050px) {
-    .bg-container {
-        height: 650px;
-    }
-    
-    .section-police {
-        height: 320px;
-    }
-}
+    @media only screen and (min-width: 1050px) {
+        .bg-container {
+            height: 650px;
+        }
 
-@media only screen and (min-width: 1150px) {
-    .bg-container {
-        height: 690px;
-        background-size: cover;
+        .section-police {
+            height: 320px;
+        }
     }
-}
 
-@media only screen and (min-width: 1301px) {
-    body {
-        border-left: 1px solid #eee;
-        border-right: 1px solid #eee;
-    }    
-}
+    @media only screen and (min-width: 1150px) {
+        .bg-container {
+            height: 690px;
+            background-size: cover;
+        }
+    }
 
+    @media only screen and (min-width: 1301px) {
+        body {
+            border-left: 1px solid #eee;
+            border-right: 1px solid #eee;
+        }
+    }
