@@ -73,6 +73,26 @@ body {
     border: 1px solid #000;
 }
 
+@-webkit-keyframes spin {
+    0%,
+    100% {
+        -webkit-transform: translate(0);
+                transform: translate(0)
+    }
+    25% {
+        -webkit-transform: translate(160%);
+                transform: translate(160%)
+    }
+    50% {
+        -webkit-transform: translate(160%, 160%);
+                transform: translate(160%, 160%)
+    }
+    75% {
+        -webkit-transform: translate(0, 160%);
+                transform: translate(0, 160%)
+    }
+}
+
 @keyframes spin {
     0%,
     100% {
